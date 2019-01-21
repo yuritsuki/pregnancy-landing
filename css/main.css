@@ -92,7 +92,7 @@ button {
 
 .block-main-ribbon-1 {
   height: 4rem;
-  background-image: url('../img/ribbon_blue.png');
+  background-image: url('../img/ribbon_pink.png');
       background-size: contain;
     background-repeat-x: no-repeat;
     background-repeat-y: no-repeat;
@@ -102,6 +102,15 @@ button {
 .block-main-ribbon-2 {
   height: 4rem;
   background-image: url('../img/ribbon_green.png');
+      background-size: contain;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    padding: 5px;
+}
+
+.block-main-ribbon-3 {
+  height: 4rem;
+  background-image: url('../img/ribbon_blue.png');
       background-size: contain;
     background-repeat-x: no-repeat;
     background-repeat-y: no-repeat;
@@ -461,3 +470,33 @@ button .row .col-6 {
 
 
 }
+
+/* Swiper */
+  .swiper-container {
+      width: 340px;
+      height: 460px;
+      position: absolute;
+      margin-top: -31.5rem;
+      margin-left: 5.2rem;
+    }
+  .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-slide img {
+      zoom: 35%;
+    }
