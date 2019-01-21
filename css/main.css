@@ -207,9 +207,27 @@ button {
   font-weight: 600;
 }
 
-.block-main-ribbon-1 {
+
+.block-main-ribbon-3 {
   height: 4rem;
   background-image: url('../img/ribbon_blue.png');
+  background-size: contain;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  padding: 5px;
+}
+
+.block-main-ribbons {
+  width: 85%;
+  margin: auto;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.block-main-ribbon-1 {
+  height: 4rem;
+  background-image: url('../img/ribbon_pink.png');
   background-size: contain;
   background-repeat-x: no-repeat;
   background-repeat-y: no-repeat;
@@ -412,6 +430,11 @@ button .row .col-6 {
   float:right;
 }
 
+.socials button {
+  border-radius: 100px;
+  padding: 0.5em 0.6em;
+}
+
 /* footer */
 
 /* block pages */
@@ -555,3 +578,36 @@ button .row .col-6 {
 }
 
 /* menu */
+
+/* Swiper */
+
+  .swiper-container {
+      width: 340px;
+      height: 460px;
+      position: absolute;
+      margin-top: -31.5rem;
+      margin-left: 5.2rem;
+  }
+  .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-slide img {
+      zoom: 35%;
+    }
+
+/* Swiper */
