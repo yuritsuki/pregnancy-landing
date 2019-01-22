@@ -28,7 +28,6 @@
     </ul>
 </header>
 
-<<<<<<< HEAD
 <!-- main section -->
 <div class="block-main">
     <div class="cloud-container">
@@ -83,7 +82,12 @@
                                     <div class="col-6" style="margin-right: 0.5rem;">Оплатить и скачать</div>
                                 </div>
                             </button>
-                            <button class="btn btn-secondary ml-4" style="padding-left: 2rem;padding-right: 2rem;">
+                            <button
+                                    class="btn btn-secondary ml-4"
+                                    style="padding-left: 2rem;padding-right: 2rem;"
+                                    data-toggle="modal"
+                                    data-target="#giftModal"
+                            >
                                 Подарить<br>книгу
                             </button>
                             <!-- TODO: normalized button style -->
@@ -254,7 +258,7 @@
             <button class="btn btn-primary mr-4">
                 Оплатить и скачать
             </button>
-            <button class="btn btn-secondary ml-4">
+            <button class="btn btn-secondary ml-4"  data-toggle="modal" data-target="#giftModal">
                 Подарить книгу
             </button>
         </div>
@@ -394,7 +398,7 @@
                     Оплатить и скачать
                 </button>
                 <br><br>
-                <button class="btn btn-secondary btn-fixed">
+                <button class="btn btn-secondary btn-fixed" data-toggle="modal" data-target="#giftModal">
                     Подарить книгу
                 </button>
             </div>
@@ -424,6 +428,58 @@
     </div>
 </div>
 <!-- footer-->
+<!-- modal -->
+<div class="modal fade" id="giftModal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="far fa-times-circle"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row modal-row">
+                    <div class="col-5 text-center">
+                        <div class="h2">
+                            Школа будущей мамы
+                        </div>
+                        <i class="block-main-description">
+                            Современное пошаговое<br> руководство №1 для родителей
+                        </i>
+                        <img src="img/book-small.png" class="img-fluid">
+                    </div>
+                    <div class="col-7">
+						<b>Подарок с электронной книгой</b>
+                        <form class="mt-4">
+                            <div class="form-group">
+                                <textarea class="form-control" id="inputText" placeholder="Поздравление"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="inputEmailFrom" placeholder="Кому: email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="inputEmailTo" placeholder="От кого: Имя или Псевдоним">
+                            </div>
+                            <!-- TODO: normalized button style -->
+                            <button class="btn btn-secondary">
+                                <div class="row button-cost">
+                                    <div class="col-6" style="margin-right: -3rem; margin-left: 0em;">1499 ₸</div>
+                                    <div class="col-6" style="margin-right: 0.5rem;">Оплатить и отправить</div>
+                                </div>
+                            </button>
+                            <!-- TODO: normalized button style -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal -->
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <!-- swiper JS -->
 <script>
     var swiper = new Swiper('.swiper-container', {
@@ -433,6 +489,4 @@
         },
     });
 </script>
-</body>
-</html>
-<script src="js/bootstrap.js"></script>
+<!-- swiper JS -->

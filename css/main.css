@@ -31,6 +31,11 @@ body {
   font-size:36px;
 }
 
+.h2 {
+  font-family: Karusel;
+  color: #1565c0;
+}
+
 @media (min-width: 1200px) {
 
   .container {
@@ -611,3 +616,58 @@ button .row .col-6 {
     }
 
 /* Swiper */
+
+/* modal */
+
+.modal-content {
+  background-color: #d5effd;
+  border: none;
+  border-radius: 20px;
+}
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-row {
+  background-image: url(../img/modal-clouds.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.modal-row .col-7 {
+  padding-top: 7.2rem;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-header .close {
+  box-shadow: none;
+  zoom: 120%;
+  padding: 0.8rem;
+}
+
+.modal-body .h2 {
+  font-size: 22px;
+}
+
+.modal-body .block-main-description {
+  font-size: 16px;
+}
+
+.modal-body .img-fluid {
+  padding-top: 2rem;
+}
+
+.form-control {
+  background-color: rgb(213, 239, 253);
+  border-color: rgb(51, 51, 51);
+}
+
+textarea {
+  height: 144px!important;
+  resize: none;
+}
+/* modal */
