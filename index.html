@@ -10,9 +10,12 @@
     <!-- Swipper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -293,7 +296,9 @@
                     Даст ответы на самые сокровенные вопросы</p>
                 <p>Еще одна цель книги - объяснить будущим родителям, что в планировании и воспитании
                     здорового потомства должны участвовать как мама, так и папа.</p>
-                <i class="block-main-description">Читайте всей семьей!</i>
+                <div class="block-main-description">
+                    <i>Читайте всей семьей!</i>
+                </div>
             </div>
             <div class="col-lg-4  col-md-12">
                 <br><br>
@@ -304,35 +309,41 @@
         <div class="block-title">
             Отзывы о книге
         </div>
-        <div class="row card-container">
-            <div class="col-4 text-center">
-                <div class=" card-1">
-                    <img src="img/rev-1.png" class="testimonials-img">
-                    <i class="block-main-description">Карина, 20 лет</i>
-                    <p class="testimonials-text">
-                        “Замечательная книга! Читали всю беременность вместе с мужем. Очень удобный формат. Когда лежала
-                        на сохранении
-                        читали с девчонками вслух. Очень много дельных советов. ”</p>
-                </div>
-            </div>
-            <div class="col-4 text-center">
-                <div class=" card-2">
-                    <img src="img/rev-2.png" class="testimonials-img">
-                    <i class="block-main-description">Карина, 20 лет</i>
-                    <p class="testimonials-text">
-                        “Замечательная книга! Читали всю беременность вместе с мужем. Очень удобный формат. Когда лежала
-                        на сохранении
-                        читали с девчонками вслух. Очень много дельных советов. ”</p>
-                </div>
-            </div>
-            <div class="col-4 text-center">
-                <div class=" card-3">
-                    <img src="img/rev-3.png" class="testimonials-img">
-                    <i class="block-main-description">Карина, 20 лет</i>
-                    <p class="testimonials-text">
-                        “Замечательная книга! Читали всю беременность вместе с мужем. Очень удобный формат. Когда лежала
-                        на сохранении
-                        читали с девчонками вслух. Очень много дельных советов. ”</p>
+        <div class="card-container">
+            <div class="owl-carousel owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+                            <div class="card-1">
+                                <img src="img/rev-1.png" class="testimonials-img">
+                                <i class="block-main-description">Карина, 20 лет</i>
+                                <p class="testimonials-text">
+                                    “Замечательная книга! Читали всю беременность вместе с мужем. Очень удобный формат. Когда лежала
+                                    на сохранении
+                                    читали с девчонками вслух. Очень много дельных советов. ”</p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="card-2">
+                                <img src="img/rev-2.png" class="testimonials-img">
+                                <i class="block-main-description">Карина, 20 лет</i>
+                                <p class="testimonials-text">
+                                    “Замечательная книга! Читали всю беременность вместе с мужем. Очень удобный формат. Когда лежала
+                                    на сохранении
+                                    читали с девчонками вслух. Очень много дельных советов. ”</p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="card-3">
+                                <img src="img/rev-3.png" class="testimonials-img">
+                                <i class="block-main-description">Карина, 20 лет</i>
+                                <p class="testimonials-text">
+                                    “Замечательная книга! Читали всю беременность вместе с мужем. Очень удобный формат. Когда лежала
+                                    на сохранении
+                                    читали с девчонками вслух. Очень много дельных советов. ”</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -473,6 +484,8 @@
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="owlcarousel/jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 <!-- swiper JS -->
 <script>

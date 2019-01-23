@@ -213,6 +213,7 @@ button {
 .block-main-description {
   color: #1565c0;
   font-weight: 600;
+  text-align: center;
 }
 
 
@@ -862,3 +863,14 @@ textarea {
 }
 
 /* adaptive */
+
+/* owl carousel */
+.disabled {
+  display: none;
+}
+
+.owl-item {
+  line-height: 1.3rem;
+  text-align: center;
+}
+/* owl carousel */
