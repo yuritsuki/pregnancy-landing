@@ -515,7 +515,7 @@ button .row .col-6 {
   cursor: pointer;
   display: inline-block;
   float: left;
-  padding: 28px 20px;
+  padding: 58px 38px;
   position: relative;
   user-select: none;
 }
@@ -523,10 +523,10 @@ button .row .col-6 {
 .header .menu-icon .navicon {
   background: #1565c0;
   display: block;
-  height: 2px;
+  height: 0.5rem;
   position: relative;
   transition: background .2s ease-out;
-  width: 18px;
+  width: 2em;
 }
 
 .header .menu-icon .navicon:before,
@@ -541,11 +541,11 @@ button .row .col-6 {
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+  top: 1rem;
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+  top: -1rem;
 }
 
 /* menu btn */
@@ -555,7 +555,7 @@ button .row .col-6 {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 450px;
+  max-height: 1000px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -619,7 +619,9 @@ button .row .col-6 {
     .swiper-wrapper img {
       zoom: 35%;
     }
-
+    .swiper-pagination {
+      visibility: hidden;
+    }
 /* Swiper */
 
 /* modal */
@@ -692,9 +694,6 @@ textarea {
   .block-main .h1 {
     padding-top: 2rem;
   }
-  .header {
-    zoom: 300%;
-  }
   .h1 {
     font-size: 60px;
   }
@@ -734,8 +733,6 @@ textarea {
   }
   .block-main button {
     width: 100%;
-  }
-  .block-main button {
     margin-bottom: 3rem;
     height: 10rem;
   }
@@ -767,10 +764,100 @@ textarea {
     margin-bottom: 3rem;
   }
   .block-about-3 p {
-    font-size: 42px;
+    font-size: 32px;
   }
   .block-about-3 .row img {
     margin: 3rem 0;
+  }
+  .block-pages .tablet-img {
+    display: none;
+  }
+  .swiper-container {
+    margin: 0 1rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: 1193px;
+  }
+  .block-pages .btn {
+    margin-left: 0!important;
+    margin-right: 0!important;
+  }
+  .swiper-slide {
+    width:100%!important;
+    height:auto;
+  }
+  .block-pages .prev, .block-pages .next {
+    display: none;
+  }
+  .swiper-pagination {
+    width: 100%;
+    position: relative;
+    visibility: visible!important;
+  }
+  .swiper-pagination-bullet {
+    margin: 3rem 1rem;
+    width: 25px;
+    height: 25px;
+  }
+  .block-pages button {
+    margin-bottom: 3rem;
+    width:70%!important;
+    padding: 2rem 4rem;
+  }
+  .footer .socials {
+    display: none;
+  }
+  .footer {
+    text-align: center;
+    padding-top: 4rem;
+  }
+  .modal-body img {
+    display: none;
+  }
+  .modal-dialog {
+    margin: 10rem auto;
+    max-width: 900px;
+  }
+  .modal-body .h2 {
+    font-size: 52px;
+  }
+  .modal-body .block-main-description {
+    font-size: 36px;
+    margin-bottom: 3rem;
+  }
+  .modal-body b {
+    margin-top: 3rem;
+    display: block;
+  }
+  .modal-row {
+    background-image: none;
+  }
+  .form-control {
+    font-size: inherit;
+    height: calc(2.25rem + 52px);
+  }
+  textarea {
+    height: 218px!important;
+  }
+  .modal-body button {
+    font-size: 2rem;
+    margin: 2rem auto!important;
+    display: block;
+  }
+  .modal-header .close {
+    font-size: 4.5rem;
+    zoom: normal;
+  }
+  .menu {
+    font-size: 42px;
+
+  }
+  .header li a {
+    padding: 1rem 20px;
+  }
+  .block-description .col-3 {
+    /*display: none;*/
   }
 }
 
