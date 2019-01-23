@@ -1,3 +1,19 @@
+// OwlCarousel
+$(document).ready(function(){
+  $(".card-container").owlCarousel({
+      stagePadding: 50,
+      margin: 15,
+      dots: false,
+      responsive:{
+        0:{
+            items:1
+        },
+        993:{
+            items:3
+        }
+    }
+  });
+});
 //smooth scrolling
 $('a[href*="#"]')
 .not('[href="#"]')
