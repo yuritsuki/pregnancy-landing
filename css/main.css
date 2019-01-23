@@ -85,9 +85,6 @@ button {
   height: auto;
 }
 
-.container {
-  z-index: 1!important;
-}
 
 /* common styles */
 
@@ -524,7 +521,7 @@ button .row .col-6 {
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: #1565c0;
   display: block;
   height: 2px;
   position: relative;
@@ -534,7 +531,7 @@ button .row .col-6 {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: #1565c0;
   content: '';
   display: block;
   height: 100%;
@@ -558,7 +555,7 @@ button .row .col-6 {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 450px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -580,7 +577,7 @@ button .row .col-6 {
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 990px) {
   .header li {
     float: left;
   }
@@ -679,3 +676,102 @@ textarea {
   resize: none;
 }
 /* modal */
+
+/* adaptive */
+
+@media (max-width: 992px) {
+  body {
+    font-size: 32px;
+  }
+  .container {
+    max-width: 899px;
+  }
+  .block-main .img-fluid {
+    margin-left: -2rem;
+  }
+  .block-main .h1 {
+    padding-top: 2rem;
+  }
+  .header {
+    zoom: 300%;
+  }
+  .h1 {
+    font-size: 60px;
+  }
+  .block-main-description {
+    font-size: 38px;
+  }
+  .block-main-ribbon-1, .block-main-ribbon-2, .block-main-ribbon-3  {
+    background-size: cover;
+    list-style-type: circle;
+    font-size: 42px;
+    margin-top: 4rem;
+    height: auto;
+    display: list-item;
+    list-style-image: url(../img/check.png);
+    background: none;
+    text-align: left;
+    padding-left: 1rem;
+    font-style: normal;
+    line-height: 2.5rem;
+  }
+  .block-main-ribbons br {
+    display: none;
+  }
+  .block-main-info {
+    padding: 0px 5rem;
+    font-size: 42px;
+    margin-top: 3rem;
+  }
+  .btn {
+    font-size: 3rem;
+    border-radius: 50px;
+    margin-left: 0px!important;
+  }
+
+  .btn br {
+    display: none;
+  }
+  .block-main button {
+    width: 100%;
+  }
+  .block-main button {
+    margin-bottom: 3rem;
+    height: 10rem;
+  }
+  .block-main-info img {
+    zoom: normal;
+  }
+  .block-about-list br, .block-about-3 br {
+    display: none;
+  }
+  .block-about-list p img {
+    zoom: 75%;
+    height: fit-content;
+  }
+  .block-title {
+    font-size: 55px
+  }
+  .block-about .block-image {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .block-about button, .block-description button {
+    padding: 1rem 4rem;
+    margin-bottom: 3rem;
+  }
+  .block-description .cloud-container, .block-pages .cloud-container {
+    display: none;
+  }
+  .block-about-2 .row img {
+    margin-bottom: 3rem;
+  }
+  .block-about-3 p {
+    font-size: 42px;
+  }
+  .block-about-3 .row img {
+    margin: 3rem 0;
+  }
+}
+
+/* adaptive */
