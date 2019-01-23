@@ -360,7 +360,7 @@ button .row .col-6 {
 .testimonials-img {
   margin:auto;
   margin-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
   zoom:35%; 
   display:block;
 }
@@ -857,8 +857,11 @@ textarea {
   .header li a {
     padding: 1rem 20px;
   }
-  .block-description .col-3 {
-    /*display: none;*/
+  .testimonials-text {
+    line-height: 3rem;
+  }
+  .testimonials-img {
+    margin-bottom: 3rem;
   }
 }
 
