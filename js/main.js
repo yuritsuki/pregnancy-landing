@@ -13,7 +13,23 @@ $(document).ready(function(){
         }
     }
   });
+  $(".persons-mobile").owlCarousel({
+      items: 1,
+      center:true,
+      stagePadding: 50,
+      margin: 15,
+      dots: true
+  });
+  $(".block-about-reasons").owlCarousel({
+        items: 1,
+        center:true,
+        stagePadding: 50,
+        margin: 15,
+      dots:true
+  })
+
 });
+
 //smooth scrolling
 $('a[href*="#"]')
 .not('[href="#"]')

@@ -279,6 +279,8 @@ button .row .col-6 {
 
 .transition {
   width: 100%;
+  margin-top: -4px;
+  margin-bottom: -1px;
 }
 
 .block-main .container .row .col-5 {
@@ -433,6 +435,9 @@ button .row .col-6 {
 
 .block-description-text b {
   color: #1565c0;
+}
+.persons-mobile {
+  display: none;
 }
 
 /* block description */
@@ -684,7 +689,7 @@ textarea {
 
 @media (max-width: 992px) {
   body {
-    font-size: 32px;
+    font-size: 42px;
   }
   .container {
     max-width: 899px;
@@ -699,7 +704,7 @@ textarea {
     font-size: 60px;
   }
   .block-main-description {
-    font-size: 38px;
+    font-size: 42px;
   }
   .block-main-ribbon-1, .block-main-ribbon-2, .block-main-ribbon-3  {
     background-size: cover;
@@ -740,7 +745,7 @@ textarea {
   .block-main-info img {
     zoom: normal;
   }
-  .block-about-list br, .block-about-3 br {
+  .block-about-list br, .block-about-3 br, .block-main-description br {
     display: none;
   }
   .block-about-list p img {
@@ -765,7 +770,7 @@ textarea {
     margin-bottom: 3rem;
   }
   .block-about-3 p {
-    font-size: 32px;
+    font-size: 42px;
   }
   .block-about-3 .row img {
     margin: 3rem 0;
@@ -824,7 +829,7 @@ textarea {
     font-size: 52px;
   }
   .modal-body .block-main-description {
-    font-size: 36px;
+    font-size: 42px;
     margin-bottom: 3rem;
   }
   .modal-body b {
@@ -842,7 +847,7 @@ textarea {
     height: 218px!important;
   }
   .modal-body button {
-    font-size: 2rem;
+    font-size: 42px;
     margin: 2rem auto!important;
     display: block;
   }
@@ -863,6 +868,113 @@ textarea {
   .testimonials-img {
     margin-bottom: 3rem;
   }
+  .block-about-reasons p .index {
+    font-size: 64px;
+  }
+  .block-description-list p img {
+    zoom: 100%;
+    padding-top: 1rem;
+  }
+  .block-description-image {
+    zoom:50%;
+  }
+  .block-about-list p img {
+    float: unset;
+    display: block;
+    margin: auto;
+  }
+  .block-about-list p {
+    display: block;
+    padding: 0rem 5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .block-about-2 .block-image {
+    display:none;
+  }
+  .block-description .questions {
+    display:grid;
+    grid-template-areas: "column-1" "column-2";
+  }
+  .questions .block-image {
+    grid-area: column-1;
+    zoom:90%;
+    padding:3rem;
+  }
+
+  .why {
+    display:grid;
+    grid-template-areas: "column-1" "column-2" "column-3" "column-4";
+  }
+  .why-img-1 {
+    grid-area: column-1;
+    zoom:90%;
+    padding:3rem;
+  }
+  .why-img-2 {
+    grid-area: column-3;
+    zoom:90%;
+    padding:3rem;
+  }
+  .why-text-2 {
+    grid-area: column-4;
+  }
+  .why-text-1 {
+    grid-area: column-2;
+  }
+  .block-about-reasons {
+
+    touch-action: manipulation;
+  }
+  .block-about-reasons p {
+    background-color: #c2eefc;
+    padding: 3rem;
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    height: 31rem;
+  }
+  .block-about-reasons p .index {
+    display: block;
+    float: none;
+    margin:auto;
+    margin-bottom: 2rem;
+  }
+  .persons-mobile {
+    display: block;
+    margin-bottom: 4rem;
+    touch-action: manipulation;
+  }
+  .persons-desktop {
+    display: none;
+  }
+
+  .persons-item {
+
+    background-color: #ddf5df;
+    padding: 4rem;
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    line-height:inherit!important;
+  }
+
+  .persons-title {
+    font-style: italic;
+    font-weight: 600;
+    color: #1565c0;
+    margin: 2rem 0rem;
+  }
+  .persons-image img {
+    margin:auto;
+    width: 50%!important;
+
+  }
+  .block-about-reasons-desc {
+    color: #333!important;
+  }
+
+
 }
 
 /* adaptive */
@@ -873,7 +985,13 @@ textarea {
 }
 
 .owl-item {
-  line-height: 1.3rem;
   text-align: center;
+}
+
+.owl-dot {
+  box-shadow:none;
+}
+.owl-dots {
+  zoom: 2
 }
 /* owl carousel */
